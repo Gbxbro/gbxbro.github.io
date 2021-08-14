@@ -1,0 +1,65 @@
+//-------------------НАЧАЛЬНЫЙ СБРОС-------------------------
+@import 'reset';
+//-------------------ПОДКЛЮЧЕНИЕ ШРИФТОВ-------------------------
+// @import 'fonts';
+//-------------------ИКОНОЧНЫЙ ШРИФТ-------------------------
+// @import 'icons';
+//-------------------ПЕРЕМЕННЫЕ-------------------------
+@import 'vars';
+//-------------------МИКСИНЫ-------------------------
+@import 'mixins';
+
+
+/* Default styles */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+    font: {
+        family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        size: 62.5%;
+    }
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Blocks */
+@import 'blocks/page';
+@import 'blocks/sidebar';
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/stories';
+@import 'blocks/add-post';
+@import 'blocks/articles';
+@import 'blocks/post__links';
+@import 'blocks/discussion';
+@import 'blocks/comments';
+@import 'blocks/embed';
+@import 'blocks/pagination';
+@import 'blocks/works';
+@import 'blocks/footer';

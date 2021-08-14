@@ -1,0 +1,38 @@
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: (14 / 12) + em;
+    color: $whiteColor;
+    border-radius: (25 / 12) + em;
+    transition: all .3s;
+
+    //btn_red
+    &_red {
+        background-color: $btnRedColor;
+        padding: (13 / 12) + em (25 / 12) + em;
+        box-shadow: 0 (7 / 12) + em (17 / 12) + em (-10 / 12) + em rgba(242, 63, 63, 0.2);
+
+        &:hover {
+            background-color: darken($btnRedColor, 10%);
+        }
+    }
+
+    //btn_blue
+    &_blue {
+        background-color: $blueColor;
+        padding: (13 / 12) + em (20 / 12) + em;
+        box-shadow: 0 (7 / 12) + em (17 / 12) + em (-10 / 12) + em rgba(32, 84, 219, 0.35);
+
+        &:hover {
+            background-color: darken($blueColor, 10%);
+        }
+    }
+
+    &_sm-b-radius {
+        box-shadow: 0 (4 / 12) + em (15 / 12) + em (-7 / 12) + em rgba(48, 55, 201, 0.3);
+        padding: (8 / 12) + em (15 / 12) + em;
+        border-radius: (5 / 12) + em;
+        display: block;
+    }
+}

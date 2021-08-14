@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <title>Search</title>
+</head>
+
+<body>
+    <sidebar class="sidebar">
+        <div class="sidebar__header">
+            <img src="assets/img/sidebar-header.jpg" alt="sidebar-header">
+        </div>
+        <div class="sidebar__content">
+            <div class="profile">
+                <img class="profile__avatar" src="https://via.placeholder.com/100" alt="sidebar-avatar">
+                <h1 class="profile__title">
+                    Дмитрий Гаврилов
+                </h1>
+                <div class="profile__subtitle">
+                    блог начинающего web-разработчика
+                </div>
+    
+                <div class="social">
+                    <a class="social__link" href="#">
+                        <img class="social__item" src="assets/img/instagram-icon.svg" alt="instagram-icon">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img class="social__item" src="assets/img/vk-icon.svg" alt="vk-icon">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img class="social__item" src="assets/img/pinterest-icon.svg" alt="pinterest-icon">
+                    </a>
+                </div>
+    
+                <p class="profile__desc">
+                    Начинающий web-разработчик. Создание сайтов начал практиковать с начала обучения в университете - 2016 год. Получил степень бакалавра в "Казанском государственном энергетическом университете" по специальности прикладная информатика в экономике.
+                </p>
+            </div>
+        </div>
+        <div class="sidebar__footer">
+            <button class="btn btn_red" type="button">
+                <a class="sidebar__footer-link" href="works.html">Мои работы</a>
+            </button>
+            <button class="btn btn_blue" type="button">
+                Написать мне
+            </button>
+        </div>
+    </sidebar>
+    <div class="page">
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__left">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="header__nav-item has-drop-down">
+                                <a href="post.html" class="header__nav-link">
+                                    Статьи
+                                </a>
+        
+                                <ul class="drop-down">
+                                    <li class="drop-down__item">
+                                        <a href="#" class="drop-down__link">
+                                            Создание сайтов
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a href="#" class="drop-down__link">
+                                            Интернет-маркетинг
+                                        </a>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <a href="#" class="drop-down__link">
+                                            Продвижение видео
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">
+                                    Обо мне
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">
+                                    Реклама
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <div class="header__right">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">
+                                    Профиль
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form action="search.html" class="search-form" method="GET">
+                        <input class="search-form__input" type="text" placeholder="Поиск по блогу">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                
+                <div class="articles">
+                    <article class="post">
+                        <div class="post__content">
+                            <h2 class="post__content-title mt0">
+                                <a class="post__content-link" href="#">
+                                    Как писать код быстро и безболезненно?
+                                </a>
+                            </h2>
+                            <p class="post__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+                                vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+                                egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas
+                                ornare vel volutpat.
+                            </p>
+                        </div>
+                        <div class="post__footer">
+                            <ul class="post__data">
+                                <li class="post__data-item">
+                                    <time class="post__data-date" datetime="2020-06-21">21.06.2020</time>
+                                </li>
+                                <li class="post__data-item">
+                                    <a class="post__data-link" href="#">
+                                        создание сайтов
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="post__footer-read-link" href="#">читать</a>
+                        </div>
+                    </article>
+                    
+                    <article class="post">
+                        <div class="post__content">
+                            <h2 class="post__content-title mt0">
+                                <a class="post__content-link" href="#">
+                                    Купил новый ноутбук за 150 000 руб
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="post__footer">
+                            <ul class="post__data">
+                                <li class="post__data-item">
+                                    <time class="post__data-date" datetime="2020-06-21">21.06.2020</time>
+                                </li>
+                                <li class="post__data-item">
+                                    <a class="post__data-link" href="#">
+                                        создание сайтов
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="post__footer-read-link" href="#">читать</a>
+                        </div>
+                    </article>
+                    
+                    <article class="post">
+                        <div class="post__content">
+                            <h2 class="post__content-title mt0">
+                                <a class="post__content-link" href="#">
+                                    Как писать код быстро и безболезненно?
+                                </a>
+                            </h2>
+                            <p class="post__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+                                vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+                                egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas
+                                ornare vel volutpat.
+                            </p>
+                        </div>
+                        <div class="post__footer">
+                            <ul class="post__data">
+                                <li class="post__data-item">
+                                    <time class="post__data-date" datetime="2020-06-21">21.06.2020</time>
+                                </li>
+                                <li class="post__data-item">
+                                    <a class="post__data-link" href="#">
+                                        создание сайтов
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="post__footer-read-link" href="#">читать</a>
+                        </div>
+                    </article>
+                    
+                    <article class="post">
+                        <div class="post__content">
+                            <h2 class="post__content-title mt0">
+                                <a class="post__content-link" href="#">
+                                    Купил новый ноутбук за 150 000 руб
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="post__footer">
+                            <ul class="post__data">
+                                <li class="post__data-item">
+                                    <time class="post__data-date" datetime="2020-06-21">21.06.2020</time>
+                                </li>
+                                <li class="post__data-item">
+                                    <a class="post__data-link" href="#">
+                                        создание сайтов
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="post__footer-read-link" href="#">читать</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            footer
+        </footer>    </div>
+
+
+
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

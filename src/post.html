@@ -1,0 +1,147 @@
+---
+layout: default
+title: Post
+---
+
+<article class="post">
+    <div class="post__share">
+        <a href="#" class="post__share-link">
+            вернуться назад
+        </a>
+        <a href="#" class="post__share-link">
+            поделиться
+            <img class="post__share-image" src="assets/img/share.svg" alt="share">
+        </a>
+    </div>
+    
+    <div class="post__content">
+        <h2 class="post__content-title post__content-title_reset">
+            Как писать код быстро и безболезненно?
+        </h2>
+        <ul class="post__data post__data_margin-bottom">
+            <li class="post__data-item">
+                <time class="post__data-date" datetime="2020-06-21">21.06.2020</time>
+            </li>
+            <li class="post__data-item">
+                <a class="post__data-link" href="#">
+                    создание сайтов
+                </a>
+            </li>
+        </ul>
+        <div class="post__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+                vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+                egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas
+                ornare vel volutpat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+                vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+                egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas
+                ornare vel volutpat.
+            </p>
+            <p>
+                <img class="post__header-image" src="assets/img/post-2.jpg" alt="post-2">
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+                vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+                egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas
+                ornare vel volutpat.
+            </p>
+        </div>
+    </div>
+
+    <aside class="post__links">
+        <h3 class="post__links-title">
+            Интересно почитать
+        </h3>
+        <ul class="post__list">
+            <li class="post__list-item">
+                <a class="post__list-link" href="#">
+                    Как я сходил на FrontEnd Conf 2021
+                </a>
+                <time class="post__list-date" datetime="">
+                    21.06.2020
+                </time>
+            </li>
+            <li class="post__list-item">
+                <a class="post__list-link" href="#">
+                    Как писать код быстро и безболезненно?
+                </a>
+                <time class="post__list-date" datetime="">
+                    21.06.2020
+                </time>
+            </li>
+            <li class="post__list-item">
+                <a class="post__list-link" href="#">
+                    Купил новый ноутбук за 150 000 руб
+                </a>
+                <time class="post__list-date" datetime="">
+                    21.06.2020
+                </time>
+            </li>
+            <li class="post__list-item">
+                <a class="post__list-link" href="#">
+                    Купил новый ноутбук за 150 000 руб
+                </a>
+                <time class="post__list-date" datetime="">
+                    21.06.2020
+                </time>
+            </li>
+        </ul>
+    </aside>
+
+    <form class="discussion" action="#">
+        <h3 class="discussion__title">
+            Обсуждение
+        </h3>
+        <textarea class="discussion__textarea" placeholder="Текст комментария"></textarea>
+        <span class="discussion__border"></span>
+        <button class="btn btn_blue btn_sm-b-radius" type="submit">
+            Отправить
+        </button>
+    </form>
+
+    <ul class="comments">
+        <li class="comments__item">
+            <div class="comments__header">
+                <img class="comments__avatar" src="https://via.placeholder.com/30" alt="">
+                <div class="comments__user">
+                    <div class="comments__user-name">
+                        Дмитрий Гаврилов
+                    </div>
+                    <time class="comments__user-time" datetime="2021-08-07">
+                        1 неделю назад
+                    </time>
+                </div>
+            </div>
+            <p class="comments__text">
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+            </p>
+            <button class="comments__reply" type="button">
+                ответить
+            </button>
+
+            <ul class="comments">
+                <li class="comments__item">
+                    <div class="comments__header">
+                        <img class="comments__avatar" src="https://via.placeholder.com/30" alt="">
+                        <div class="comments__user">
+                            <div class="comments__user-name">
+                                Дмитрий Гаврилов
+                            </div>
+                            <time class="comments__user-time" datetime="2021-08-07">
+                                1 неделю назад
+                            </time>
+                        </div>
+                    </div>
+                    <p class="comments__text">
+                        Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                    </p>
+                    <button class="comments__reply" type="button">
+                        ответить
+                    </button>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</article>
