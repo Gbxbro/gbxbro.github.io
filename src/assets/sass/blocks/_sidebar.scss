@@ -91,5 +91,12 @@
         margin: 0 1.5rem;
         max-width: 2.5rem;
         max-height: 2.5rem;
+
+        &_large {
+            max-width: 4.5rem;
+            max-height: 4.5rem;
+        }
     }
+
+    
 }

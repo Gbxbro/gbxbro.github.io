@@ -1,0 +1,41 @@
+---
+layout: default
+title: User
+---
+<h1 class="user__title">
+    Профиль
+</h1>
+<form class="form user__form" action="#" method="POST">
+    <div class="form__inner">
+        <div class="user__data">
+            <ul class="form__list">
+                <li class="form__item">
+                    <input class="form__formcontrol" type="text" placeholder="Имя и фамилия" value="Дмитрий Гаврилов">
+                    <span class="form__border"></span>
+                </li>
+                <li class="form__item">
+                    <input class="form__formcontrol" type="email" placeholder="Email" value="Gavrstyle@gmail.com">
+                    <span class="form__border"></span>
+                </li>
+                <li class="form__item">
+                    <input class="form__formcontrol" type="password" placeholder="Новый пароль">
+                    <span class="form__border"></span>
+                </li>
+                <li class="form__item">
+                    <input class="form__formcontrol" type="password" placeholder="Подтвердите пароль">
+                    <span class="form__border"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="user__avatar">
+            <img class="user__avatar-image" src="https://via.placeholder.com/150" alt="avatar">
+            <label class="user__avatar-label" for="user__avatar-file">
+                Выбрать аватар
+                <input class="user__avatar-file" id="user__avatar-file" type="file">
+            </label>
+        </div>
+    </div>
+    <button class="btn btn_blue btn_sm-b-radius" type="submit">
+        Отправить
+    </button>
+</form>

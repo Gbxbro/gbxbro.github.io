@@ -35,4 +35,9 @@
         border-radius: (5 / 12) + em;
         display: block;
     }
+
+    // .btn_center
+    &_center {
+        margin: 0 auto;
+    }
 }

@@ -1,0 +1,48 @@
+.user {
+
+    // .user__form
+    &__form {
+        background-color: $secondaryColor;
+    }
+
+    // .user__title
+    &__title {
+        font-size: 2.1rem;
+        line-height: 2.1rem;
+        color: $whiteColor;
+        margin-bottom: 6rem;
+    }
+
+    // .user__data
+    &__data {
+        min-width: (340 / 600) * 100%;
+    }
+
+    // .user__avatar
+    &__avatar {
+
+        // .user__avatar-image
+        &-image {
+            max-width: 15rem;
+            max-height: 15rem;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+        }
+
+        // .user__avatar-label
+        &-label {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: #107EFF;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        // .user__avatar-file
+        &-file {
+            display: none;
+        }
+    }
+}

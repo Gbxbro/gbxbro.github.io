@@ -47,6 +47,10 @@ img {
     padding: 0 15px;
 }
 
+.scroll-off {
+    overflow: hidden;
+}
+
 /* Blocks */
 @import 'blocks/page';
 @import 'blocks/sidebar';
@@ -57,9 +61,12 @@ img {
 @import 'blocks/add-post';
 @import 'blocks/articles';
 @import 'blocks/post__links';
-@import 'blocks/discussion';
+@import 'blocks/form';
 @import 'blocks/comments';
 @import 'blocks/embed';
 @import 'blocks/pagination';
 @import 'blocks/works';
+@import 'blocks/user';
+@import 'blocks/signup';
+@import 'blocks/modal';
 @import 'blocks/footer';
