@@ -9,10 +9,11 @@
     left: 0;
     top: 0;
     transition: transform .2s linear;
-    // padding-bottom: 2rem;
+    padding-bottom: 2rem;
     overflow: scroll;
 
     @include breakpoint($tablet-bp) {
+        
         display: flex;
         flex-direction: column;
         padding-top: 4rem;
