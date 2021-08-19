@@ -8,7 +8,7 @@ title: Post
         <a href="#" class="post__share-link">
             вернуться назад
         </a>
-        <a href="#" class="post__share-link">
+        <a href="#" class="post__share-link" data-modal="share-modal">
             поделиться
             <img class="post__share-image" src="assets/img/share.svg" alt="share">
         </a>
@@ -90,11 +90,11 @@ title: Post
         </ul>
     </aside>
 
-    <form class="form" action="#">
+    <form class="form" action="#" method="POST">
         <h3 class="form__title">
             Обсуждение
         </h3>
-        <textarea class="form__formcontrol" placeholder="Текст комментария"></textarea>
+        <textarea class="form__formcontrol" placeholder="Текст комментария" data-autoresize></textarea>
         <span class="form__border"></span>
         <button class="btn btn_blue btn_sm-b-radius" type="submit">
             Отправить

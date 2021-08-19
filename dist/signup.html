@@ -20,25 +20,26 @@
 
 //class="scroll-off"
 <body>
-    <sidebar class="sidebar">
+    <sidebar class="sidebar" id="sidebar">
         <div class="sidebar__header">
             <img src="assets/img/sidebar-header.jpg" alt="sidebar-header">
         </div>
         <div class="sidebar__content">
             <div class="profile">
-                <img class="profile__avatar" src="https://via.placeholder.com/100" alt="sidebar-avatar">
-                <h1 class="profile__title">
-                    Дмитрий Гаврилов
-                </h1>
-                <div class="profile__subtitle">
-                    блог начинающего web-разработчика
+                <img class="profile__avatar" src="assets/img/avatar.jpg" alt="sidebar-avatar">
+                <div class="profile__inner">
+                    <h1 class="profile__title">
+                        Дмитрий Гаврилов
+                    </h1>
+                    <div class="profile__subtitle">
+                        блог web-разработчика
+                    </div>
                 </div>
-    
                 <div class="social">
                     <a class="social__link" href="#">
                         <img class="social__item" src="assets/img/instagram-icon.svg" alt="instagram-icon">
                     </a>
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="https://vk.com/gbxbro">
                         <img class="social__item" src="assets/img/vk-icon.svg" alt="vk-icon">
                     </a>
                     <a class="social__link" href="#">
@@ -47,32 +48,85 @@
                 </div>
     
                 <p class="profile__desc">
-                    Начинающий web-разработчик. Создание сайтов начал практиковать с начала обучения в университете - 2016 год. Получил степень бакалавра в "Казанском государственном энергетическом университете" по специальности прикладная информатика в экономике.
+                    Знания HTML5, CSS3 (Flexbox, Grid Layout), основы JS, работа с DOM. Адаптивная и Responsive верстка, работа с медиа-запросами. Поддержание кроссбраузерности, префиксы. Понимание использования сетки Bootstrap. Использование Gulp, написание тасков. Скачивание плагинов через npm, их подключение и использование по документации. Препроцессоры Saas/SCSS. Базовые знания Git.
                 </p>
             </div>
+    
+            <nav class="nav nav_mobile">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item has-drop-down">
+                        <a href="post.html" class="nav__link">
+                            Статьи
+                        </a>
+    
+                        <ul class="drop-down">
+                            <li class="drop-down__item">
+                                <a href="#" class="drop-down__link">
+                                    Создание сайтов
+                                </a>
+                            </li>
+                            <li class="drop-down__item">
+                                <a href="#" class="drop-down__link">
+                                    Интернет-маркетинг
+                                </a>
+                            </li>
+                            <li class="drop-down__item">
+                                <a href="#" class="drop-down__link">
+                                    Продвижение видео
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Обо мне
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Реклама
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="user.html">
+                            Профиль
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            Выйти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="sidebar__footer">
             <button class="btn btn_red" type="button">
                 <a class="sidebar__footer-link" href="works.html">Мои работы</a>
             </button>
-            <button class="btn btn_blue" type="button">
+            <button class="btn btn_blue" type="button" data-modal="contact-modal">
                 Написать мне
             </button>
         </div>
     </sidebar>
-    <div class="page">
+    <div class="page" id="page">
         <header class="header">
             <div class="header__inner">
                 <div class="header__left">
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item">
-                                <a href="index.html" class="header__nav-link">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">
                                     Главная
                                 </a>
                             </li>
-                            <li class="header__nav-item has-drop-down">
-                                <a href="post.html" class="header__nav-link">
+                            <li class="nav__item has-drop-down">
+                                <a href="post.html" class="nav__link">
                                     Статьи
                                 </a>
         
@@ -94,30 +148,34 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">
+                            <li class="nav__item">
+                                <a href="about.html" class="nav__link">
                                     Обо мне
                                 </a>
                             </li>
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
                                     Реклама
                                 </a>
                             </li>
                         </ul>
                     </nav>
+        
+                    <button class="burger" id="burger-menu">
+                        <span class="burger__line"></span>
+                    </button>
                 </div>
         
                 <div class="header__right">
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="user.html">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="user.html">
                                     Профиль
                                 </a>
                             </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
                                     Выйти
                                 </a>
                             </li>
@@ -177,11 +235,83 @@
             </div>
         </main>
 
-        <footer class="footer">
-            footer
-        </footer>    </div>
+        <!-- <footer class="footer">
+    footer
+</footer> -->
+    </div>
 
+    <div class="modal" id="contact-modal">
+        <div class="modal__content">
+            <button class="modal-close" type="button">
+                <img class="modal-close-icon" src="assets/img/modal-close.svg" alt="modal-close">
+            </button>
+    
+            <form class="form modal__form" action="#" method="POST">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <input class="form__formcontrol" type="text" placeholder="Ваше имя и фамилия">
+                        <span class="form__border"></span>
+                    </li>
+                    <li class="form__item">
+                        <input class="form__formcontrol" type="email" placeholder=" Ваш e-mail">
+                        <span class="form__border"></span>
+                    </li>
+                    <li class="form__item">
+                        <input class="form__formcontrol" type="text" placeholder="Текст сообщения">
+                        <span class="form__border"></span>
+                    </li>
+                </ul>
+                <button class="btn btn_blue btn_sm-b-radius" type="submit">
+                    Отправить
+                </button>
+            </form>
+            <div class="modal__footer">
+                <ul class="modal__footer-list">
+                    <li class="modal__footer-item">
+                        e-mail:
+                        <a href="mailto:gavrstyle@gmail.com" class="modal__footer-link">
+                            gavrstyle@gmail.com
+                        </a>
+                    </li>
+                    <li class="modal__footer-item">
+                        тел:
+                        <a href="tel:+79964232505" class="modal__footer-link">
+                            +7(996)-423-25-05
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content_story">
+            <video src="" class="modal__video" poster="https://via.placeholder.com/420x580"></video>
+        </div>
+    </div>    <div class="modal" id="share-modal">
+        <div class="modal__content">
+            <button class="modal-close" type="button">
+                <img class="modal-close-icon" src="assets/img/modal-close.svg" alt="modal-close">
+            </button>
+    
+            <div class="social social_show-share">
+                <a class="social__link" href="#">
+                    <img class="social__item social__item_large" src="assets/img/share/facebook.svg" alt="facebook-icon">
+                </a>
+                <a class="social__link" href="#">
+                    <img class="social__item social__item_large" src="assets/img/share/twitter.svg" alt="twitter-icon">
+                </a>
+                <a class="social__link" href="#">
+                    <img class="social__item social__item_large" src="assets/img/share/vk.svg" alt="vk-icon">
+                </a>
+                <a class="social__link" href="#">
+                    <img class="social__item social__item_large" src="assets/img/share/copy.svg" alt="copy-icon">
+                </a>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/modal.min.js"></script>
+    <script src="assets/js/burger-menu.min.js"></script>
+    <script src="assets/js/resizeTextarea.min.js"></script>
 
 </body>
 

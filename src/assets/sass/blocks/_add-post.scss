@@ -1,17 +1,18 @@
 .add-post {
+    background-color: $addPostFormColor;
     font-size: 1.5rem;
     line-height: (17 / 15) + em;
     margin-bottom: 2em;
     box-shadow: 0 1em (25 / 15) + em rgba(0, 0, 0, 0.45);
-    border-radius: .33em;
+    border-radius: 0.33em;
     overflow: hidden;
 
     // .add-post__form
     &__form {
-        background-color: $addPostFormColor;
+        background-color: transparent;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
     }
 
     // .add-post__form-textarea
@@ -24,11 +25,21 @@
         resize: none;
         line-height: inherit;
         flex: 1 1;
-        padding: 0 (28 / 15) + em;
+        line-height: 1.6rem;
+        padding: 2rem (28 / 15) + em;
         overflow: hidden;
+        
 
         &::placeholder {
-            color: #D2D2D2;
+            color: #d2d2d2;
+            line-height: 1rem;
+            // transform: scale(0.45);
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            padding: 0 1rem;
         }
     }
 
@@ -36,6 +47,10 @@
     &__form-actions {
         display: flex;
         padding: 1.5rem 2rem;
+
+        @include breakpoint($mobile-bp) {
+            padding: 1rem;
+        }
     }
 
     //.add-post__form-label
@@ -45,13 +60,23 @@
         width: 4.4rem;
         height: 4.4rem;
         border-radius: 50%;
+
+        @include breakpoint($mobile-bp) {
+            width: 3.4rem;
+            height: 3.4rem;
+        }
     }
 
     //.add-post__form-label
     &__form-label {
         margin-right: 1.5rem;
-        background: url(../img/add-post-file.svg) center no-repeat #EBEBEB;
+        background: url(../img/add-post-file.svg) center no-repeat #ebebeb;
         cursor: pointer;
+
+        @include breakpoint($mobile-bp) {
+            background-size: 18px;
+            margin-right: 1rem;
+        }
     }
 
     // .add-post__form-file
@@ -62,9 +87,11 @@
     // .add-post__form-submit
     &__form-submit {
         display: block;
-        width: 4.4rem;
-        height: 4.4rem;
         border: none;
-        background: url(../img/add-post-submit.svg) center no-repeat #3137C9;
+        background: url(../img/add-post-submit.svg) center no-repeat #3137c9;
+
+        @include breakpoint($mobile-bp) {
+            background-size: 15px;
+        }
     }
 }

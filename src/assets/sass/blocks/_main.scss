@@ -2,4 +2,8 @@
     flex: 1 0 auto;
     background-color: $secondaryColor;
     padding: 10rem 0 8rem;
+
+    @include breakpoint($mobile-bp) {
+        padding: 6rem 0 4.5rem;
+    }
 }

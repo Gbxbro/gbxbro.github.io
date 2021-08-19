@@ -11,11 +11,19 @@
         line-height: 2.1rem;
         color: $whiteColor;
         margin-bottom: 6rem;
+
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 3rem;
+        }
     }
 
     // .user__data
     &__data {
         min-width: (340 / 600) * 100%;
+
+        @include breakpoint($mobile-bp) {
+            order: 2;
+        }
     }
 
     // .user__avatar
@@ -43,6 +51,11 @@
         // .user__avatar-file
         &-file {
             display: none;
+        }
+
+        @include breakpoint($mobile-bp) {
+            order: 1;
+            margin-bottom: 3rem;
         }
     }
 }

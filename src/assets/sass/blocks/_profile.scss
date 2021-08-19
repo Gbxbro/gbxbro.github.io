@@ -1,0 +1,75 @@
+.profile {
+    position: relative;
+
+    @include breakpoint($tablet-bp) {
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid #1C1C1C;
+    }
+
+    // .profile__inner
+    &__inner {
+        margin-bottom: 1.7rem;
+        @include breakpoint($tablet-bp) {
+            position: absolute;
+            top: 0;
+            text-align: left;
+            padding-left: 8rem;
+            padding-top: 3rem;
+        }
+    }
+
+    // .profile__avatar
+    &__avatar {
+        max-width: 10rem;
+        max-height: 10rem;
+        position: relative;
+        margin: 0 auto 1.9rem;
+        border-radius: 50%;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 0.7rem 2rem rgba(0, 0, 0, 0.25);
+
+        @include breakpoint($tablet-bp) {
+            max-width: 6.5rem;
+            max-height: 6.5rem;
+            margin-left: 0;
+        }
+    }
+
+    // .profile__title
+    &__title {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin-bottom: 0.3rem;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+        }
+    }
+
+    // .profile__subtitle
+    &__subtitle {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: #DEDEDE;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+    }
+
+    // .profile__desc
+    &__desc {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding: 2rem 0;
+        border-top: 1px solid #1C1C1C;
+        border-bottom: 1px solid #1C1C1C;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint($tablet-bp) {
+            display: none;
+        }
+    }
+}

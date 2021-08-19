@@ -1,0 +1,7 @@
+//-------------------МИКСИНЫ-------------------------
+
+@mixin breakpoint ($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}

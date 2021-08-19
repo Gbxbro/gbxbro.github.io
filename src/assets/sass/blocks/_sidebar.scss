@@ -2,13 +2,25 @@
     color: $whiteColor;
     background-color: $primaryColor;
     box-shadow: .5rem 0 1.5rem rgba(5, 5, 5, 0.1);
-    max-width: $sidebarWidth;
+    width: $sidebarWidth;
     height: 100vh;
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
+    transition: transform .2s linear;
+    // padding-bottom: 2rem;
     overflow: scroll;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+        transform: translateX(-100%);
+        .show-sidebar & {
+            transform: translateX(0);
+        }
+    }
     
     &::-webkit-scrollbar {
         width: 0;
@@ -18,12 +30,26 @@
     &__header {
         background-color: #C4C4C4;
         width: 100%;
+
+        img {
+            max-height: 18rem;
+            object-fit: cover;
+            @include breakpoint($tablet-bp) {
+                max-height: 10rem;
+            } 
+        }
     }
 
     // .sidebar__content
     &__content {
         margin-top: -5rem;
         text-align: center;
+        padding: 0 2rem;
+
+        @include breakpoint($tablet-bp) {
+            flex-grow: 1;
+            margin-top: -2.15rem;
+        }
     }
 
     // .sidebar__footer
@@ -39,64 +65,4 @@
         text-decoration: none;
     }
 }
-.profile {
-    padding: 0 2rem;
 
-    // .profile__avatar
-    &__avatar {
-        max-width: 10rem;
-        max-height: 10rem;
-        position: relative;
-        margin: 0 auto 1.9rem;
-        border-radius: 50%;
-        border: 2px solid #FFFFFF;
-        box-shadow: 0px 0.7rem 2rem rgba(0, 0, 0, 0.25);
-    }
-
-    // .profile__title
-    &__title {
-        font-size: 1.8rem;
-        line-height: 2.1rem;
-        margin-bottom: 0.3rem;
-    }
-
-    // .profile__subtitle
-    &__subtitle {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-        color: #DEDEDE;
-        margin-bottom: 1.7rem;
-    }
-
-    // .profile__desc
-    &__desc {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        padding: 3rem 0;
-        border-top: 1px solid #1C1C1C;
-        border-bottom: 1px solid #1C1C1C;
-        margin-bottom: 3rem;
-    }
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    
-    // .social__item
-    &__item {
-        display: inline;
-        margin: 0 1.5rem;
-        max-width: 2.5rem;
-        max-height: 2.5rem;
-
-        &_large {
-            max-width: 4.5rem;
-            max-height: 4.5rem;
-        }
-    }
-
-    
-}

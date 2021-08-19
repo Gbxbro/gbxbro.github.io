@@ -9,7 +9,7 @@
 <body>
     {{>sidebar}}
 
-    <div class="page">
+    <div class="page" id="page">
         {{>header}}
 
         <main class="main">
@@ -18,10 +18,17 @@
             </div>
         </main>
 
-        {{>footer}}
+        <!-- {{>footer}} -->
     </div>
 
+    {{>contact-modal}}
+    {{>story-modal}}
+    {{>share-modal}}
+
     <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/modal.min.js"></script>
+    <script src="assets/js/burger-menu.min.js"></script>
+    <script src="assets/js/resizeTextarea.min.js"></script>
 
 </body>
 

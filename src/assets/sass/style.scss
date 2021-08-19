@@ -19,6 +19,13 @@
 
 body {
     position: relative;
+    background-color: $secondaryColor;
+
+    @include breakpoint($tablet-bp) {
+        .show-sidebar {
+            overflow: hidden;
+        } 
+    }
 }
 
 html,
@@ -42,9 +49,13 @@ img {
 }
 
 .container {
-    max-width: 630px;
+    max-width: 70rem;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 5rem;
+
+    @include breakpoint($mobile-bp) {
+        padding: 0 1.5rem;
+    }
 }
 
 .scroll-off {
@@ -53,9 +64,13 @@ img {
 
 /* Blocks */
 @import 'blocks/page';
-@import 'blocks/sidebar';
 @import 'blocks/btn';
 @import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/sidebar';
+@import 'blocks/profile';
+@import 'blocks/social';
+@import 'blocks/burger';
 @import 'blocks/main';
 @import 'blocks/stories';
 @import 'blocks/add-post';
@@ -69,4 +84,5 @@ img {
 @import 'blocks/user';
 @import 'blocks/signup';
 @import 'blocks/modal';
+@import 'blocks/about';
 @import 'blocks/footer';

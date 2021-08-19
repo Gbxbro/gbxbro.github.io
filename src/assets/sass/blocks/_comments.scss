@@ -10,6 +10,12 @@
             margin-top: 3rem;
             margin-left: 3rem;
         } 
+
+        @include breakpoint($mobile-bp) {
+            & > .comments {
+                margin-left: 1.5rem;
+            } 
+        }
     }
 
     // .comments__header

@@ -1,0 +1,28 @@
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+
+    // .social_show-share
+    &_show-share {
+        display: flex;
+    }
+    
+    // .social__item
+    &__item {
+        display: inline;
+        margin: 0 1.5rem;
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+
+        &_large {
+            max-width: 4.5rem;
+            max-height: 4.5rem;
+        }
+    }
+}

@@ -7,18 +7,39 @@
     top: 0;
     left: 0;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &.show {
+        display: flex;
+    }
 
     &__content {
         max-width: 50rem;
         width: 100%;
         padding: 8rem 8rem 2.5rem;
         background-color: $secondaryColor;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         position: relative;
+        opacity: 0;
+
+        transform: translateY(-50px);
+        transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+
+        @include breakpoint($tablet-bp) {
+            padding: 5rem 3rem 3rem;
+        }
+    }
+
+    &__content_story {
+        padding: 0;
+        background: none;
+
+        @include breakpoint($mobile-bp) {
+            width: 80%;
+        }
     }
 
     &-close {
@@ -27,23 +48,17 @@
         right: 2rem;
         border: none;
         background-color: transparent;
-        opacity: .5;
-        transition: all .2s;
+        opacity: 0.5;
+        transition: all 0.2s;
 
         &:hover {
             opacity: 1;
             transform: rotate(90deg);
         }
-
     }
 
     &__form {
         background-color: transparent;
-    }
-
-    // .modal__footer
-    &__footer {
-
     }
 
     // .modal__footer-list
@@ -55,19 +70,31 @@
 
     // .modal__footer-item
     &__footer-item {
-        margin: 0 .5rem;
+        margin: 0 0.5rem;
         font-size: 1.2rem;
         line-height: 1.6rem;
-        color: #B2B2B2;
+        color: #b2b2b2;
     }
 
     // .modal__footer-link
     &__footer-link {
         color: inherit;
-        
 
         &:hover {
             text-decoration: none;
+        }
+    }
+
+    // .modal__video
+    &__video {
+        max-width: 420px;
+        max-height: 580px;
+        display: block;
+        margin: 0 auto;
+
+        @include breakpoint($mobile-bp) {
+            height: 100%;
+            width: 100%;
         }
     }
 }
