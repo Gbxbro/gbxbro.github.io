@@ -24,7 +24,7 @@
     }
 
     @include breakpoint($mobile-bp) {
-        padding-bottom: 6rem;
+        padding-bottom: 8rem;
     }
     
     &::-webkit-scrollbar {
