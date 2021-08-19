@@ -22,6 +22,10 @@
             transform: translateX(0);
         }
     }
+
+    @include breakpoint($mobile-bp) {
+        padding-bottom: 6rem;
+    }
     
     &::-webkit-scrollbar {
         width: 0;
