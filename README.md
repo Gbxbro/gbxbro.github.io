@@ -1,3 +1,7 @@
+---
+permalink: dist/index.html
+---
+
 ### Hi there 👋
 ### Author: Gavrilov Dmitriy
 
